@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>使用弹性盒子元素居中</title>
+
+    <style>
+        /* 使用弹性盒子 1 */
+
+        /* .container {
+            width: 400px;
+            height: 400px;
+            background-color: blue;
+            display: flex;
+        }
+
+        .child {
+            width: 100px;
+            height: 100px;
+            background-color: pink;
+            margin: auto;
+        } */
+
+        /* 使用弹性盒子 2 */
+
+        .container {
+            width: 400px;
+            height: 400px;
+            background-color: blue;
+            /* 弹性模型 */
+            display: flex;  
+             /*垂直居中 */
+            align-items: center;
+            /* 水平居中 */
+            justify-content: center; 
+        }
+
+        .child {
+            width: 100px;
+            height: 100px;
+            background-color: pink;
+            /* margin: auto; */
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <!-- 元素居中的三种方式 ： 使用 css 实现 -->
+
+    <div class="container">
+
+        <div class="child"></div>
+        <!-- <div class="child"></div>
+        <div class="child"></div>
+        <div class="child"></div>
+
+        <div class="child"></div>
+        <div class="child"></div> -->
+
+    </div>
+
+
+</body>
+
+</html>

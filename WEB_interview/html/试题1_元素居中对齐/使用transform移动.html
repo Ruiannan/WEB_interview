@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>使用transform移动 元素居中</title>
+
+    <style>
+    
+    /* 使用transform移动 */
+    .container{
+        /* 父元素相对定位 */
+        position: relative;  
+        width: 400px;
+        height: 400px;
+        background-color: blue;
+    }
+
+    .child{
+        /* 子元素绝对定位 */
+        width: 100px;
+        height: 100px;
+        background-color: pink;
+
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        /* 分别向左，向右移动子元素 */
+        transform: translate(-50%,-50%)
+
+    }
+
+    </style>
+
+</head>
+<body>
+    
+    <!-- 元素居中的三种方式 ： 使用 css 实现 -->
+
+    <div class="container">
+
+        <div class="child"></div>
+        <!-- <div class="child"></div>
+        <div class="child"></div>
+        <div class="child"></div> -->
+
+    </div>
+
+
+</body>
+</html>
